@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Bagian_2.master.cs" Inherits="RENT_CAR.src.bag2.Bagian_2" %>
+
+<!DOCTYPE html>
+
+<html style="scroll-behavior: smooth;">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../img/car-icon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>UAS PBO | RENTAL MOBIL</title>
+</head>
+<body class="p-0" style="font-family: 'Poppins', sans-serif;">
+    <form id="form1" runat="server">
+        <%-- HEADER --%>
+        <header style="border-bottom: 1px solid white;">
+            <%-- Navbar Website --%>
+            <div class="container-fluid" style="background-color: #000; height: 3.1rem; z-index: 99;">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000; color: #fff; height: 3.1rem;">
+                    <a class="navbar-brand" href="/src/bag1/Beranda.aspx" style="font-family: 'Jua', sans-serif; font-style: italic;">RENT-CAR</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse rounded-sm" id="navbarNavAltMarkup" style="background-color: rgba(0,0,0,1); padding:.2rem; padding-left: 2rem; z-index: 10;">
+                        <ul class="navbar-nav ml-auto" style="cursor: default;">
+                            <li class="nav-item active">
+                                <a class="nav-link" style="text-decoration: none;">Data Pelanggan</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" style="text-decoration: none;">Armada</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <%-- Akhir Navbar Website --%>
+        </header>
+        <%-- AKHIR HEADER --%>
+
+        <%-- CONTENT --%>
+        <main>
+            <div class="container-fluid body-content" style="background-color: #F3F3F3;">
+                <asp:ContentPlaceHolder ID="Master2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <%-- AKHIR CONTENT --%>
+    </form>
+</body>
+</html>

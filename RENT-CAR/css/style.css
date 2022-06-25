@@ -1,0 +1,373 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    transition: 0.3s ease-in-out;
+}
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid white;
+        transition: 0.3s ease-in-out;
+        width: 50%;
+        margin: auto;
+    }
+
+.cursor .cursor-atas img,
+.cursor .cursor-bawah img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.gambar-utama .teks-gambar {
+    position: absolute;
+    font-size: 5rem;
+    top: 15rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.keterangan-sewa .teks-penyewaan {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.card-outer {
+    transition: 0.3s ease-in-out;
+}
+
+    .card-outer:hover {
+        transform: scale(1.02);
+        transition: 0.3s ease-in-out;
+    }
+
+        .card-outer:hover .card {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+.sisi-kiri {
+    height: 95vh;
+    background-color: #F3F3F3;
+}
+
+    .sisi-kiri .list {
+        margin-right: -1.2rem;
+    }
+
+    .sisi-kiri h1 {
+        font-size: 2.2rem;
+    }
+
+    .sisi-kiri h4 {
+        font-size: 1.3rem;
+    }
+
+        .sisi-kiri h4 a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .sisi-kiri h4:hover a {
+            text-decoration: underline;
+        }
+
+    .sisi-kiri .list h4 {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+        .sisi-kiri .list h4.aktif {
+            background-color: #fff;
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            font-size: 1.25rem;
+            width: 100%;
+            border-left: 5px solid black;
+        }
+
+.bungkus-detail {
+    height: 95vh;
+    padding: 10rem 12rem 0 12rem;
+}
+
+    .bungkus-detail .bungkus-luar {
+        border-radius: 20px;
+        width: 55rem;
+        height: 38rem;
+        padding: 2rem 1rem 0 1rem;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
+
+        .bungkus-detail .bungkus-luar .form-control {
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid black;
+            outline: none;
+            padding: 0.1rem 0.5rem;
+            box-shadow: none;
+        }
+
+            .bungkus-detail .bungkus-luar .form-control:active {
+                outline: none;
+                border-radius: 0;
+            }
+
+        .bungkus-detail .bungkus-luar h2 {
+            padding-top: 2rem;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .bungkus-detail .bungkus-luar small {
+            letter-spacing: 1px;
+            font-size: 1rem;
+        }
+
+        .bungkus-detail .bungkus-luar p {
+            letter-spacing: 1.2px;
+            font-size: 1.3rem;
+        }
+
+.pil-tombol {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+    .pil-tombol div {
+        width: 15rem;
+        margin: .7rem;
+    }
+
+        .pil-tombol div button {
+            font-size: 1.1rem;
+            border-radius: 10px;
+        }
+
+            .pil-tombol div button a {
+                text-decoration: none;
+                color: white;
+            }
+
+@media (min-width: 1700px) {
+    .sisi-kiri h1 {
+        font-size: 1.5rem;
+    }
+
+    .sisi-kiri .aktif,
+    .sisi-kiri h4 {
+        font-size: 1.1rem;
+    }
+
+    .bungkus-detail .bungkus-luar {
+        width: 50rem;
+        height: 38rem;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1700px) {
+    .sisi-kiri h1 {
+        font-size: 1.45rem;
+    }
+
+    .sisi-kiri .aktif,
+    .sisi-kiri h4 {
+        font-size: 1rem;
+    }
+
+    .sisi-kiri .aktif {
+        margin: 0;
+    }
+
+    .sisi-kiri .list {
+        margin-right: 0;
+    }
+
+    .bungkus-detail {
+        padding: 9rem;
+    }
+
+        .bungkus-detail .bungkus-luar {
+            width: 45rem;
+            height: 38rem;
+            margin: auto;
+        }
+
+            .bungkus-detail .bungkus-luar h2 {
+                font-size: 2rem;
+            }
+
+            .bungkus-detail .bungkus-luar small {
+                font-size: 1rem;
+            }
+
+            .bungkus-detail .bungkus-luar p {
+                font-size: 1.2rem;
+            }
+}
+
+@media (max-width: 1200px) {
+    .bungkus-detail {
+        margin: auto;
+        padding: 9rem;
+    }
+
+        .bungkus-detail .bungkus-luar {
+            width: 40rem;
+            height: 40rem;
+            margin: auto;
+        }
+
+            .bungkus-detail .bungkus-luar h2 {
+                font-size: 1.8rem;
+            }
+
+            .bungkus-detail .bungkus-luar small {
+                font-size: 1rem;
+            }
+
+            .bungkus-detail .bungkus-luar p {
+                font-size: 1.3rem;
+            }
+}
+
+@media (max-width: 996px) {
+    .sisi-kiri {
+        height: 30vh;
+    }
+
+    .bungkus-detail {
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+        .bungkus-detail .bungkus-luar {
+            width: 35rem;
+            height: 60rem;
+            margin: auto;
+        }
+
+            .bungkus-detail .bungkus-luar h2 {
+                font-size: 1.8rem;
+            }
+
+            .bungkus-detail .bungkus-luar small {
+                font-size: 1.1rem;
+            }
+
+            .bungkus-detail .bungkus-luar p {
+                font-size: 1.3rem;
+            }
+
+            .bungkus-detail .bungkus-luar .pil-tombol {
+                padding: 0;
+                margin: 5rem;
+                margin-top: 5rem;
+                width: 100%;
+                flex-direction: column;
+            }
+
+                .bungkus-detail .bungkus-luar .pil-tombol div {
+                    width: 100%;
+                    margin: auto;
+                }
+
+    .bungkus-table .table th {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .gambar-utama .teks-gambar {
+        font-size: 3rem;
+        top: 22rem;
+    }
+
+    .keterangan-sewa .teks-penyewaan {
+        font-size: 3rem;
+    }
+
+    .cursor .cursor-atas img,
+    .cursor .cursor-bawah img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid rgba(0,0,0,0.5);
+    }
+
+    .sisi-kiri {
+        height: 30vh;
+    }
+
+        .sisi-kiri h1 {
+            font-size: 1.6rem;
+        }
+
+        .sisi-kiri h4 {
+            font-size: 1.1rem;
+        }
+
+        .sisi-kiri .list {
+            margin-right: 0;
+        }
+
+    .bungkus-table {
+        margin-left: -1rem;
+    }
+
+        .bungkus-table .table th {
+            text-align: center;
+        }
+
+    .bungkus-detail {
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+        .bungkus-detail .bungkus-luar {
+            width: 30rem;
+        }
+
+            .bungkus-detail .bungkus-luar h2 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .bungkus-detail .bungkus-luar small {
+                font-size: 0.95rem;
+            }
+
+            .bungkus-detail .bungkus-luar p {
+                font-size: 1.1rem;
+            }
+
+            .bungkus-detail .bungkus-luar .pil-tombol {
+                padding: 0;
+                margin: 5rem;
+                margin-top: 5rem;
+                width: 100%;
+                flex-direction: column;
+            }
+
+                .bungkus-detail .bungkus-luar .pil-tombol div {
+                    width: 100%;
+                    margin: auto;
+                }
+}
